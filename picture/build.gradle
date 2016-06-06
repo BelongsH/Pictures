@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 23
@@ -27,12 +26,3 @@ dependencies {
 
 }
 
-//添加
-publish {
-    userOrg = 'nianxin'
-    groupId = 'com.nianxin'
-    artifactId = 'pictures'
-    publishVersion = '1.0.0'
-    desc = 'a pictures utils'
-    website = ''
-}

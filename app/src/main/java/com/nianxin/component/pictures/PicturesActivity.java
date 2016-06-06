@@ -41,8 +41,7 @@ public class PicturesActivity extends AppCompatActivity implements PictureProxy.
         rcv_main.setLayoutManager(new LinearLayoutManager(this));
         adapter = new PicturesAdapter(this, models);
         rcv_main.setAdapter(adapter);
-//        HashMap<String, List<Picture>> maps = (HashMap<String, List<Picture>>) PictruesResolver.getPicturs(getApplicationContext());
-//        onSuccess(maps);
+
         pictureProxy = new PictureProxy(this);
         pictureProxy.startPictureProxy(this);
     }
