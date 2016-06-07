@@ -34,21 +34,5 @@ public class PictureService extends IntentService {
         broadcastIntent.addCategory(Intent.CATEGORY_DEFAULT);
         SPUtils.put(getApplicationContext(),"picturs",new Gson().toJson(maps));
         sendBroadcast(broadcastIntent);
-
-//        try {
-//            HashMap<String, List<Picture>> maps = (HashMap<String, List<Picture>>) PictruesResolver.getPicturs(getApplicationContext());
-//            broadcastIntent.setAction(PictureReceiver.PictureReceiver_ACTION);
-//            broadcastIntent.addCategory(Intent.CATEGORY_DEFAULT);
-//            broadcastIntent.putExtra(TAG, "RAM");
-//            broadcastIntent.putExtra("datas", maps);
-//        } catch (Exception e) {
-//            if (e.getMessage().contains("size")) {
-//                broadcastIntent.putExtra(TAG, "DISK");
-//            }
-//        } finally {
-//            sendBroadcast(broadcastIntent);
-//        }
     }
-
-
 }

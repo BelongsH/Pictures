@@ -30,7 +30,6 @@ public class PictureReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         try {
-//            Map<String, List<Picture>> maps = (Map<String, List<Picture>>) intent.getSerializableExtra("datas");
             String datas = (String) SPUtils.get(context, "picturs", "");
             SPUtils.put(context, "picturs", "");
             if (TextUtils.isEmpty(datas)) {
